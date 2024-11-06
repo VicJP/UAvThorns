@@ -27,10 +27,10 @@ CCTK_REAL Zeta type=gf timelevels=3 tags='tensortypealias="Scalar" tensorweight=
 
 CCTK_REAL phi type=gf timelevels=3 tags='tensortypealias="Scalar" tensorweight=0'
 {
-  phi1 phi2
+  phi1 phi2 phi3 phi4
 } "scalar fields"
 
 CCTK_REAL Kphi type=gf timelevels=3 tags='tensortypealias="Scalar" tensorweight=0'
 {
-  Kphi1 Kphi2
+  Kphi1 Kphi2 Kphi3 Kphi4
 } "their conjugated momenta"

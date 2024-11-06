@@ -24,8 +24,12 @@ subroutine MagScalar_InitSymBound( CCTK_ARGUMENTS )
 
   call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_phi1" )
   call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_phi2" )
+  call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_phi3" )
+  call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_phi4" )
 
   call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_Kphi1" )
   call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_Kphi2" )
+  call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_Kphi3" )
+  call SetCartSymVN( ierr, cctkGH, (/ 1, 1, 1/), "UAv_MagScalarEvolve::rhs_Kphi4" )
 
 end subroutine MagScalar_InitSymBound

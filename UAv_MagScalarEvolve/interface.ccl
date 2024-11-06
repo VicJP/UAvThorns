@@ -70,12 +70,12 @@ CCTK_REAL rhs_Zeta type=gf tags='tensortypealias="Scalar" tensorweight=0 prolong
 
 CCTK_REAL rhs_phi type=gf tags='tensortypealias="Scalar" tensorweight=0 prolongation="none" Checkpoint="no"'
 {
-  rhs_phi1 rhs_phi2
+  rhs_phi1 rhs_phi2 rhs_phi3 rhs_phi4
 } "right hand sides for scalar field evolution equations"
 
 CCTK_REAL rhs_Kphi type=gf tags='tensortypealias="Scalar" tensorweight=0 prolongation="none" Checkpoint="no"'
 {
-  rhs_Kphi1 rhs_Kphi2
+  rhs_Kphi1 rhs_Kphi2 rhs_Kphi3 rhs_Kphi4
 } "right hand sides for evolution of conjugated momenta"
 
 # BSSN-like variables

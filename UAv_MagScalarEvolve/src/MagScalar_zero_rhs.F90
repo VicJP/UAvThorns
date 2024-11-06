@@ -21,8 +21,12 @@ subroutine MagScalar_zero_rhs( CCTK_ARGUMENTS )
 
   rhs_phi1    = 0
   rhs_phi2    = 0
+  rhs_phi3    = 0
+  rhs_phi4    = 0
 
   rhs_Kphi1   = 0
   rhs_Kphi2   = 0
+  rhs_Kphi3   = 0
+  rhs_Kphi4   = 0
 
 end subroutine MagScalar_zero_rhs

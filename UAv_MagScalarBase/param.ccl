@@ -61,7 +61,7 @@ CCTK_REAL A0[3] "asymptotic value for A_i"
 } 0
 
 # considering a potential of the form
-# V = mu^2 |phi|^2 (1 - 2 V_lambda |phi|^2)^2
+# V = mu^2 |phi|^2 + V_lambda |phi|^4
 CCTK_REAL V_lambda "interaction term in the potential"
 {
   *:*           :: ""
@@ -74,7 +74,14 @@ CCTK_REAL mu "mass of the scalar fields"
 
 # considering a scalar field coupled to the vectorial field through
 # the covariant derivative operator D_mu = nabla_mu + i q A_mu 
-CCTK_REAL q "charge of the scalar fields"
+CCTK_REAL q "charge of the scalar field"
+{
+  *:*           :: "any number"
+} 0
+
+# considering a second scalar field coupled to the vectorial field through
+# the covariant derivative operator D_mu = nabla_mu + i p A_mu 
+CCTK_REAL p "charge of the second scalar field"
 {
   *:*           :: "any number"
 } 0
@@ -118,6 +125,48 @@ CCTK_REAL Kphi1_0 "asymptotic value for Kphi1"
 } 0
 
 CCTK_REAL Kphi2_0 "asymptotic value for Kphi2"
+{
+  *:*           :: ""
+} 0
+
+CCTK_INT n_phi3 "n power of outgoing boundary r^n fall off rate for phi3"
+{
+  0:4           :: "??"
+} 1
+
+CCTK_INT n_phi4 "n power of outgoing boundary r^n fall off rate for phi4"
+{
+  0:4           :: "??"
+} 1
+
+CCTK_REAL phi3_0 "asymptotic value for phi3"
+{
+  *:*           :: ""
+} 0
+
+CCTK_REAL phi4_0 "asymptotic value for phi4"
+{
+  *:*           :: ""
+} 0
+
+
+CCTK_INT n_Kphi3 "n power of outgoing boundary r^n fall off rate for Kphi3"
+{
+  0:4           :: "??"
+} 2
+
+CCTK_INT n_Kphi4 "n power of outgoing boundary r^n fall off rate for Kphi4"
+{
+  0:4           :: "??"
+} 2
+
+
+CCTK_REAL Kphi3_0 "asymptotic value for Kphi3"
+{
+  *:*           :: ""
+} 0
+
+CCTK_REAL Kphi4_0 "asymptotic value for Kphi4"
 {
   *:*           :: ""
 } 0

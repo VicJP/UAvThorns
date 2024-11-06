@@ -20,8 +20,12 @@ void MagScalarBase_Zero(CCTK_ARGUMENTS) {
     Zeta[i] = 0.0;
     phi1[i] = 0.0;
     phi2[i] = 0.0;
+    phi3[i] = 0.0;
+    phi4[i] = 0.0;
     Kphi1[i]= 0.0;
     Kphi2[i]= 0.0;
+    Kphi3[i]= 0.0;
+    Kphi4[i]= 0.0;
   }
 
   if (CCTK_EQUALS(initial_data_setup_method, "init_some_levels") ||
@@ -41,8 +45,12 @@ void MagScalarBase_Zero(CCTK_ARGUMENTS) {
               Zeta_p[i] = 0.0;
               phi1_p[i] = 0.0;
               phi2_p[i] = 0.0;
+	            phi3_p[i] = 0.0;
+              phi4_p[i] = 0.0;
               Kphi1_p[i]= 0.0;
               Kphi2_p[i]= 0.0;
+	            Kphi3_p[i]= 0.0;
+              Kphi4_p[i]= 0.0;
           }
       }
 
@@ -59,8 +67,12 @@ void MagScalarBase_Zero(CCTK_ARGUMENTS) {
               Zeta_p_p[i] = 0.0;
               phi1_p_p[i] = 0.0;
               phi2_p_p[i] = 0.0;
+	            phi3_p_p[i] = 0.0;
+              phi4_p_p[i] = 0.0;
               Kphi1_p_p[i]= 0.0;
               Kphi2_p_p[i]= 0.0;
+	            Kphi3_p_p[i]= 0.0;
+              Kphi4_p_p[i]= 0.0;
           }
       }
   } else {
